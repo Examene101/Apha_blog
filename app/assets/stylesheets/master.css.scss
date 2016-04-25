@@ -1,9 +1,15 @@
 
 #header {
+    top: 0;
     background-color:black;
     color:white;
     text-align:center;
     padding:5px;
+    height:100px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    
 }
 #nav {
     line-height:30px;
@@ -11,7 +17,6 @@
     height:300px;
     width:100px;
     float:left;
-    padding:5px; 
 }
 #section {
     width:350px;
@@ -19,9 +24,14 @@
     padding:10px; 
 }
 #footer {
+    position:absolute;
+    bottom:0;
     background-color:black;
     color:white;
     clear:both;
     text-align:center;
     padding:5px; 
+    width: 100%;
+    left: 0;
+    right: 0;
 }
