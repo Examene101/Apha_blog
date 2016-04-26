@@ -1,11 +1,11 @@
 <body>
 
   <div id="header">
-    <h1>Alpha Blog</h1>
+    <h1><%= link_to "Alpha Blog", articles_path %></h1>
   </div>
   
   <div id="nav">
-    Warriors vs Rockets
+     <%= link_to "Alpha Blog", articles_path %>
   </div>
   
   <div id="section">
@@ -17,8 +17,8 @@
   </div>
   
   <div id="footer">
-  <br />
-    <%= link_to "About Page", about_path %>
+   <br />
+   <%= link_to "About Page", about_path %>
   </div>
 
 </body>

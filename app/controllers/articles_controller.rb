@@ -6,12 +6,12 @@ class ArticlesController < ApplicationController
   
   def new 
     # initialize@Article 
-   @article = Article.new
+    @article = Article.new
   end
   
   
-  def edit 
-   find_article
+  def edit
+    find_article
   end
   
   def create
@@ -40,7 +40,14 @@ class ArticlesController < ApplicationController
   end
   
   def show
-   find_article
+    find_article
+  end
+  
+  def destroy
+    find_article
+    @article.destroy
+    flash[:notice] = "Article was successfully deleted"
+    redirect_to articles_path
   end
   
   private
