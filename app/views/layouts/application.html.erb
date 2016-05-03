@@ -7,14 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= render "layouts/navigation" %>
 
   <%= render "layouts/messages" %>
-  
-  <%= yield %>
+  <div class= "container">
+   <%= yield %>
+   
+  </div>
+ 
+
 
 </body>
+
+
 </html>
-<div id="footer">
-   <br />
-   <%= link_to "Home Page", root_path %>
-</div>
+ <%= render "layouts/footer" %>
+
+
+
+
+  
